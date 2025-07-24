@@ -932,30 +932,46 @@ background: linear-gradient(90deg, rgba(223, 237, 242, 1) 0%, rgba(230, 237, 247
   <script>
   const links = document.querySelectorAll(".domain-links");
   const image = document.getElementById("preview-image");
-  const defaultImage = "https://pastatic.picsart.com/cms-pastatic/1b63d445-9fa4-4dd0-9467-b73f070218e9.png?type=webp&to=max&r=910&q=100";
+  const baseUrl = "https://pastatic.picsart.com/cms-pastatic/";
+  let currentImage = "";
 
-  links.forEach(link => {
-    link.addEventListener("mouseover", () => {
-      const newSrc = link.getAttribute("data-img");
-      image.style.opacity = 0;
+  // Reusable function to update image with transition
+  function changeImageWithTransition(imgId) {
+    const newSrc = `${baseUrl}${imgId}?type=webp&to=max&r=910&q=100`;
 
-      setTimeout(() => {
-        image.setAttribute("src", newSrc);
-        image.style.opacity = 1; 
-      }, 300); 
-    });
-
-    link.addEventListener("mouseout", () => {
-      image.style.opacity = 0;
+    if (image.src !== newSrc) {
+      image.style.transform = "scale(0.95)";
+      image.style.opacity = "0.3";
 
       setTimeout(() => {
-        image.setAttribute("src", defaultImage);
-        image.style.opacity = 1;
+        image.src = newSrc;
+        image.style.opacity = "1";
+        image.style.transform = "scale(1)";
       }, 300);
+
+      currentImage = imgId;
+    }
+  }
+
+  // Apply hover behavior to each domain link
+  links.forEach(link => {
+    link.addEventListener("mouseenter", () => {
+      const imgId = link.getAttribute("data-img");
+      changeImageWithTransition(imgId);
     });
   });
-</script>
 
+  // Automatically "hover" first link on load with same effect
+  window.addEventListener("DOMContentLoaded", () => {
+    const firstLink = links[0];
+    const firstImgId = firstLink.getAttribute("data-img");
+
+    // Simulate a slight delay to mimic user hover naturally
+    setTimeout(() => {
+      changeImageWithTransition(firstImgId);
+    }, 500);
+  });
+</script>
 
 <script>
     window.addEventListener('scroll', function () {
