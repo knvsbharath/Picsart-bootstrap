@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picsart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./ext.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-white py-2">
+    <a class="navbar-brand" href="#"><img
+        src="https://pastatic.picsart.com/cms-pastatic/8218299e-3dc4-4d50-8a54-0b78d3f5a683.svg" alt=""
+        class="ml-3"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto  ml-3 " style="font-weight: 600;">
+        <li class="nav-item dropdown mr-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Create
+          </a>
+        <li class="nav-item dropdown mr-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Buisiness
+          </a>
+        <li class="nav-item dropdown mr-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Developers
+          </a>
+        <li class="nav-item dropdown mr-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+        <li class="nav-item dropdown mr-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Pricing
+          </a>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="mr-3" style="font-size: 1.2rem;"><i class="fa-solid fa-search"></i></div>
+        <button class="btn mr-3 " style="font-size: 0.8rem;">Start creating</button>
+        <button class="nav-btn bg-dark text-white"type="submit">LogIn</button>
+      </form>
+    </div>
+  </nav>
+
+  <div style="text-align:center;"><img
+      src="https://pastatic.picsart.com/cms-pastatic/212a2e4e-a28a-4a8b-83f2-bd34f38169d2.png?type=webp&to=min&r=1200&q=75"
+      alt="" class="editors-choice" style="width: 8.5%;margin-right: 18px;">
+    <img
+      src="https://pastatic.picsart.com/cms-pastatic/09ffad1f-cec9-417d-b688-5cfecaee59f6.png?type=webp&to=min&r=1200&q=75"
+      alt="" class="editors-choice" style="width:8.5%;">
+  </div>
+
+  <h1 class="mt-3" style="text-align: center; font-size: 60px;font-weight: 600;"><span class="design">Design</span> made
+    easy</h1>
+  <h2 class="mt-4" style="text-align: center; font-size: 1.3rem;">The only AI-powered creative companion you’ll ever
+    need to grow
+    <br /> your brand. Get it all done with Picsart’s ultimate creative suite.
+  </h2>
+
+  <div class="mt-3" style="text-align:center;"><button class="btn mt-3">Get started for free</button></div>
+
+  <div class="video mt-md-5 mb-md-5"><video  autoplay loop muted>
+      <source src="https://pastatic.picsart.com/cms-pastatic/fc24d726-cee2-4b34-8920-05b5f181d21a.mp4">
+    </video></div>
+
+  <h1 style="text-align: center; font-size: 60px;font-weight: 600;">What will you <span class="create">create</span>
+    today?</h1>
+
+  <div class="container my-5">
+    <div class="scroll-wrapper">
+
+      <div class="scroll-arrow scroll-arrow-left" id="leftArrow"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="scroll-arrow scroll-arrow-right" id="rightArrow"><i class="fa-solid fa-angle-right"></i></div>
+
+      <div class="scroll-container" id="cardContainer">
+        <div class="card">
+          <img
+            src="https://pastatic.picsart.com/cms-pastatic/2f19b9b8-773a-4833-ab97-6fa7832553b8.png?type=webp&to=min&r=-1"
+            alt="" class="card-img-top">
+          <div class="mt-auto text-md-start">Logos<br><small>450 templates</small></div>
+        </div>
+
+        <div class="card">
+          <div class="d-flex justify-content-center"><img
+              src="https://pastatic.picsart.com/cms-pastatic/a991c01a-02be-4659-b9bf-d13d26165478.png?type=webp&to=min&r=-1"
+              alt="" class="w-75"></div>
+          <div class="mt-auto text-md-start">Resumes<br><small>50 templates</small></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://pastatic.picsart.com/cms-pastatic/abdc53e3-4c65-4d9b-a714-72725f004162.png?type=webp&to=min&r=-1"
+            alt="">
+          <div class="mt-auto text-md-start">Banners<br><small>700 templates</small></div>
+        </div>
+        <div class="card">
+          <div class="d-flex justify-content-center"><img
+              src="https://pastatic.picsart.com/cms-pastatic/2d56225a-f6a9-4fff-a746-692e8330285a.png?type=webp&to=min&r=-1"
+              alt="" class="w-75"></div>
+          <div class="mt-auto text-md-start">Social Media<br><small>1,000 templates</small></div>
+        </div>
+        <div class="card">
+          <div class="d-flex justify-content-center"><img
+              src="https://pastatic.picsart.com/cms-pastatic/1dc99983-618f-4a30-9849-9a9201f87967.png?type=webp&to=min&r=-1"
+              alt="" style="width: 80px;"></div>
+          <div class="mt-auto text-md-start">Posters<br><small>1,000 templates</small></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://pastatic.picsart.com/cms-pastatic/da2620ed-2f36-46a4-935e-f264a143bd0a.png?type=webp&to=min&r=-1"
+            alt="">
+          <div class="mt-auto text-md-start"> Business Cards<br><small>200 templates</small></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://pastatic.picsart.com/cms-pastatic/a984701c-454b-4942-98f7-fbc8193eca96.png?type=webp&to=min&r=-1"
+            alt="">
+          <div class="mt-auto text-md-start">Flyers<br><small>250 templates</small></div>
+        </div>
+        <div class="card">
+          <div class="d-flex justify-content-center">
+            <img
+              src="https://pastatic.picsart.com/cms-pastatic/9467f920-5944-4fcf-81ea-911040102d38.png?type=webp&to=min&r=-1"
+              alt="" class="w-75">
+          </div>
+          <div class="mt-auto text-md-start">Documents<br><small>150 templates</small></div>
+        </div>
+        <div class="card">
+          <div class="d-flex justify-content-center">
+            <img
+              src="https://pastatic.picsart.com/cms-pastatic/9f3ae77c-cf99-49ed-8ef8-dc66c4125eb2.png?type=webp&to=min&r=-1"
+              alt="" class="w-75">
+          </div>
+          <div class="mt-auto text-md-start">Invitations<br><small>1,000 templates</small></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://pastatic.picsart.com/cms-pastatic/60ec98fc-e658-4006-ac95-8b9eb584c395.png?type=webp&to=min&r=-1"
+            alt="">
+          <div class="mt-auto text-md-start"> Backgrounds<br><small>500 templates</small></div>
+        </div>
+        <div class="card">
+          <div class="d-flex justify-content-center">
+            <img
+              src="https://pastatic.picsart.com/cms-pastatic/7b727334-90d3-46df-a1e0-eb0a84d080e5.png?type=webp&to=min&r=-1"
+              alt="" class="w-100">
+          </div>
+          <div class="mt-auto text-md-start">Videos<br><small>650 templates</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div style="text-align: center;margin-bottom: 5%;"><button class="btn">Show all <i
+        class="fa-solid fa-arrow-right"></i></button></div>
+
+  <h5 style="text-align: center;font-size: 0.9rem;font-weight: 600;">Join our creative community</h5>
+  <h1 style="text-align: center;font-size: 60px;font-weight: 600;">Trusted by <span class="creators">150 million+</span>
+    creators</h1>
+
+  <div class="container">
+    <div class="row mt-md-5 ">
+      <div class="col-md-3" style="text-align: center;">
+        <div class="people">
+          <h1 class="count-grad1">1B+</h1>
+          <h5 style="font-weight: bolder;">creative edits made <br /> every month</h5>
+        </div>
+      </div>
+      <div class="col-md-3" style="text-align: center;">
+        <div class="people">
+          <h1 class="count-grad2">1M+</h1>
+          <h5 style="font-weight: bolder;">AI images generated<br /> daily</h5>
+        </div>
+      </div>
+      <div class="col-md-3 " style="text-align: center;">
+        <div class="people">
+          <h1 class="count-grad3">20+</h1>
+          <h5 style="font-weight: bolder;">generative AI tools to<br /> transform your workflow</h5>
+        </div>
+      </div>
+      <div class="col-md-3" style="text-align: center;">
+        <div class="people">
+          <h1 class="count-grad4">300M+</h1>
+          <h5 style="font-weight: bolder;">editable photos,<br /> templates,and more every month</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="mt-5" style="text-align:center;font-size: 2rem;">Recognized by global buisiness and media</h1>
+<div class="container-fluid">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <img src="https://cdn-cms-uploads.picsart.com/cms-uploads/041c7d23-c14e-4875-b038-cf196a2e5165.webp?type=webp&to=min&r=1200&q=60" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <img src="https://cdn-cms-uploads.picsart.com/cms-uploads/d4dd441b-2db7-432d-80b2-b56f7b8d65f4.webp?type=webp&to=min&r=1200&q=60" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <img src="https://cdn-cms-uploads.picsart.com/cms-uploads/7d4e9ae7-c8ab-4ec0-8ce1-94770e2cec08.webp?type=webp&to=min&r=1200&q=60" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <img src="https://pastatic.picsart.com/cms-pastatic/5b16a1b0-d330-4054-a124-bbbcd593ccec.webp?type=webp&to=min&r=1200&q=60" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <img src="https://cdn-cms-uploads.picsart.com/cms-uploads/dff3943a-43d6-4768-90a6-08a96545ecf7.webp?type=webp&to=min&r=1200&q=60" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+ <div class="container-fluid text-white p-5" style="background-color:black;">
+    <div class="row px-md-5">
+      <div class="col-12">
+        <h1 style="font-size: 60px;">Where work and play <br />blend together</h1>
+        <h5>With Picsart, you don't have to choose between creativity and productivity. Powering your part- <br />time,
+          full-time, and fun times.</h5>
+      </div>
+
+      <div class="col-md-5 text-secondary mt-5">
+        <h2 class="domain-links" data-img="C:\Users\LENOVO\OneDrive\Desktop\frontend\Picsart-Bootstrap\c778b3f2-364a-4e7d-93e0-9bdd53fef468.png">Fashion & Beauty</h2>
+        <h2 class="domain-links" data-img="C:\Users\LENOVO\OneDrive\Desktop\frontend\Picsart-Bootstrap\a01a003c-a605-4d5f-b609-5cd7a68a12db.png">Real Estate</h2>
+        <h2 class="domain-links" data-img="C:\Users\LENOVO\OneDrive\Desktop\frontend\Picsart-Bootstrap\8e0e6dcc-4f73-42de-b2b1-ebcbb20902df.png">Food & Drink</h2>
+        <h2 class="domain-links" data-img="C:\Users\LENOVO\OneDrive\Desktop\frontend\Picsart-Bootstrap\8197a046-243f-44ab-95fa-af623e80509d.png">Interior Design</h2>
+        <h2 class="domain-links" data-img="C:\Users\LENOVO\OneDrive\Desktop\frontend\Picsart-Bootstrap\727afe45-22c8-476d-b1fa-afeecadfa5bc.png">Health & Wellness</h2>
+        <h2 class="domain-links" data-img="C:\Users\LENOVO\OneDrive\Desktop\frontend\Picsart-Bootstrap\a52ea973-f9af-4b24-9fa7-55797d5f0ef8.png">Education</h2>
+        <h2 class="domain-links" data-img= "C:\Users\LENOVO\OneDrive\Desktop\frontend\Picsart-Bootstrap\1b63d445-9fa4-4dd0-9467-b73f070218e9.png">Entertainment</h2>
+      <br />
+        <button class="btn btn-light">Try for free</button>
+      </div>
+
+      <div class="col-md-7 mt-5">
+        <img id="preview-image"
+          src="https://pastatic.picsart.com/cms-pastatic/1b63d445-9fa4-4dd0-9467-b73f070218e9.png?type=webp&to=max&r=910&q=100"
+          alt="Preview" class="w-100 hover-image">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid px-md-5 mt-5 ">
+    <div class="row px-md-5 ">
+      <div class="col-md-6 mt-5">
+        <h1 style="font-size: 60px;font-weight:600;">Better design.</h1>
+        <h1 class=" fw-bold" style="font-size: 60px;font-weight:600;">Less time.</h1>
+        <p style="font-size: 1.3rem;">Accelerate your creative projects and process.AI makes it faster <br /> and easier
+          to <a class="text-links" href="">edit your photos,remove backgrounds,</a> and <br />generate new
+          backgrounds</span>- all
+          before your first cup of coffee.</p>
+        <button class="btn">Explore AI tools</button>
+      </div>
+      <div class="col-md-6 mt-5 mb-4">
+        <img
+          src="https://pastatic.picsart.com/cms-pastatic/cd3d6abd-dd23-4fa5-857d-687050249a65.png?type=webp&to=min&r=1200&q=40"
+          alt="" class="w-100">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-md-5 mt-5">
+    <div class="row d-flex  px-md-5 ">
+      <div class="col-md-6 mt-5 mb-4">
+        <img
+          src="https://pastatic.picsart.com/cms-pastatic/45f4bea8-a859-47a0-bc36-a6544c7cfbfc.png?type=webp&to=min&r=1200&q=40"
+          class="w-100" alt="">
+      </div>
+      <div class="col-md-6 mt-5">
+        <h1 style="font-size: 60px;font-weight:600;">Multiply your ideas</h1>
+        <p style="font-size: 1.3rem;">Go from an idea to execution in a flash. <a class="text-links" href="">Generate
+            images </a>or <br /> discover plenty of ready-to-use <a class="text-links" href="">design templates</a>
+          you <br />won't find anywhere else.Never run out of inspiration again.</p>
+        <button class="btn">Generate AI images</button>
+      </div>
+    </div>
+
+    <div class="row d-flex px-md-5 mt-5">
+      <div class="col-md-6 mt-5">
+        <h1 style="font-size: 60px;font-weight: 600;">Engage a creative <br />community</h1>
+        <p style="font-size: 1.2rem;">Join our community of 150 million+ creators just like you. Picsart <br /> unlocks
+          fresh
+          creative avenues,empowering you to explore AI <br />creation,share your ideas, and connect with others who
+          share <br />
+          your interests in <a class="text-links" href="">Spaces.</a></p>
+      </div>
+      <div class="col-md-6 mt-5">
+        <img
+          src="https://pastatic.picsart.com/cms-pastatic/443187f5-eb31-4264-adbc-6bf32ee6c861.png?type=webp&to=min&r=1200&q=40"
+          style="width: 100%;">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scrollbox">
+    <h1 class="mb-5" style="color: white;font-weight: 600;">Join <span style="color: blueviolet;"> millions</span> of
+      creators who grow their <br /> brand with Picsart</h1>
+    <div class="scrollbox-container mb-3">
+      <div class="scrollbox-row">
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Makes my life easier</h5>
+          <p>I’ve been using it for about 2 years to make all the <br /> graphics for my small business. It’s
+            reliable,<br /> effective and to the point. The background <br />erasing tool solves a lot of problems and
+            makes <br />my life easier. I edit everything on the go.</p><br />
+          <p class="mt-4">Nadia T</p>
+        </div>
+
+        <div class="scrollbox-col-grad">
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <h5>Incredibly intuitive and easy to use</h5>
+          <p>I have been using Picsart AI Photo Editor, Video & <br />Collage Maker for the past few years and I love it
+            <br /> is one of the most comprehensive photo editing <br />apps I’ve seen, allowing me to make quick edits
+            <br />to my photos and videos, or more intricate edits <br />using the various tools available.
+          </p>
+          <p class="mt-5">Pakelika</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>It’s my go-to app</h5>
+          <p>I can’t get enough of Picsart! It’s my go-to app <br />for adding that extra bit of flair to my photos.</p>
+          <br /><br />
+          <p class="mt-5">Lauren</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Helps you grow as an artist</h5>
+          <p>The first thing I fell in love with, and why I continue <br /> to love Picsart, is the community itself.
+            <br />Encouragement from others is so valuable and <br />helps you grow as an artist. And because we all
+            <br /> have preferred tools and styles, being able to go <br />through questions and experiences with other
+            <br />artists is really fun
+          </p>
+          <p class="">@hey_its_me_april</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Very intuitive, very powerful</h5>
+          <p>Great tool for photo editing, very intuitive, very <br />powerful. Also, a lot of inspiration from
+            others.</p><br /><br /><br />
+          <p class="mt-5">Geoff</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>It’s always growing and improving</h5>
+          <p>I’ve been using this program for years and love it! <br />It’s always growing and improving. If you are
+            <br />looking for a photo editor to play around with or <br /> a little something extra for your business I
+            would <br />highly recommend giving this one a try!
+          </p><br />
+          <p class="mt-3">Cathy</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Extremely easy to use app</h5>
+          <p>I use Picsart throughout the day, sometimes for <br /> work and sometimes for play. It is an extremely
+            <br />easy to use app and allows me to express my <br />creativity in endless ways.
+          </p><br />
+          <p class="mt-5">Ali</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Definitely worth the money</h5>
+          <p>Definitely worth the money. There are so many <br /> features that you can’t get in the free apps. Trust
+            <br />me I’ve looked and compared!
+          </p><br />
+          <p class="mt-5">Craig M</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Most intuitive, user friendly Editor</h5>
+          <p>I don’t usually write reviews, but PicsArt is great. <br /> It’s by far the best photo editing app on
+            Android</p><br /><br />
+          <p class="mt-5">Nick</p>
+        </div>
+      </div>
+
+      <div class="scrollbox-row">
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Fantastic. Very user friendly</h5>
+          <p>Fantastic. Very user friendly. Thanks to Picsart, <br /> anybody can generate images now!</p><br /><br />
+          <p class="mt-5">Madan</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Best photo and video editor!</h5>
+          <p>I love Picsart, is the best photo and video editor! <br /> It has new options daily and so many features. I
+            <br />highly recommend it. And it is very user friendly. <br /> Go for it! It is an amazing app!
+          </p>
+          <p class="mt-5">Carina L</p>
+        </div>
+        <div class="scrollbox-col-grad">
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <h5>New designs, new features</h5>
+          <p>I’ve been using Picsart for a long time, and it’s <br />never boring for me, every week something new is
+            <br />coming: new designs, new features, new <br />solutions.
+          </p>
+          <p class="mt-5">Levon_Grigoryan</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Extremely user friendly</h5>
+          <p>Extremely user friendly, brilliant and top notch <br />designs. It has every imaginable tool one can use
+            <br /> in digital content designing.
+          </p>
+          <p class="mt-5">Ashish</p>
+        </div>
+        <div class="scrollbox-col-grad">
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <h5>The best photo editing app ever</h5>
+          <p>This is by far the best photo editing app ever. <br />There are so many different things filters options
+            <br />things can do that any other regular editing app <br /> doesn’t have. My gf and I have been using this
+            <br /> app for years and the developers always find <br />ways to make it better!
+          </p>
+          <p>Adam N</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Stunning features</h5>
+          <p>Stunning features and brilliant functionality <br />packed in a neat, streamlined interface. thank
+            <br />you for this :)
+          </p><br />
+          <p class="mt-5">Seth W</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>Hands-on learning experience</h5>
+          <p>I had limited technical skills when I joined Spaces <br />just a few months ago, and it’s been wonderful in
+            <br />providing a hands-on learning experience.
+          </p><br />
+          <p class="mt-5">@kaiakreations</p>
+        </div>
+        <div class="scrollbox-col">
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <i class="fa-solid fa-star" style="color: #7228e2;"></i>
+          <h5>So many editing options</h5>
+          <p>I have loved Picsart for over 10 years, maybe <br />longer. It is EASY to use and chock full of so many
+            <br />editing options. The sky’s the limit. All it takes is <br /> your imagination!
+          </p><br /> <br />
+          <p class="mt-5">Jackie J</p>
+        </div>
+        <div class="scrollbox-col-grad">
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <i class="fa-solid fa-star" style="color: #B197FC;"></i>
+          <h5>This app is perfect for me</h5>
+          <p>Fantastic app for anyone who likes editing <br />photos/graphic design. I’ve been using it for <br />many
+            months now and have only good things <br />come from it. I enjoy writing and this app is <br />perfect for
+            me to make covers for the stories I <br /> made, and every cover I’ve made on here turned <br />out great.
+          </p>
+          <p class="mt-5">Audrey</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h6 class="text-center" style="color: white;">Read more reviews on the App Store</h6>
+  </div>
+
+  <div class="container-fluid px-md-5 mt-5" style="">
+    <div class="row d-flex px-md-5 mt-5"
+      style="background: #dfedf2;
+background: linear-gradient(90deg, rgba(223, 237, 242, 1) 0%, rgba(230, 237, 247, 1) 35%, rgba(83, 133, 232, 1) 100%, rgba(83, 234, 212, 1) 100%, rgba(148, 89, 89, 1) 100%);border-radius: 20px;">
+      <div class="col-md-6 px-md-5 mt-5">
+        <h1 style="font-size: 55px;font-weight:600;">For mobile and web</h1>
+        <p style="font-size: 1.3rem;">On the web or on the go, create wherever <br />inspiration strikes. It’s
+          flexibility and design <br /> power, always at your fingertips.</p>
+        <button class="btn"><i class="fa-solid fa-image"></i>Get started on web</button>
+        <h6 class="fw-bold mt-3">Also available for mobile:</h6>
+        <a href=""><img src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg" alt=""
+            class="w-25" style="margin-top: -8%;"></a>
+        <a href=""><img
+            src="https://images.seeklogo.com/logo-png/29/2/get-it-on-google-play-badge-logo-png_seeklogo-290335.png"
+            alt="" class="w-25" style="margin-top: -8%;"></a>
+      </div>
+      <div class="col-md-6">
+        <img
+          src="https://pastatic.picsart.com/cms-pastatic/92234420-fce3-455c-961c-1f3c1c7f2a88.png?type=webp&to=min&r=1200&q=40"
+          class="w-75" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <h1 class="mt-5" style="font-size: 60px; text-align: center;"><span class="text-primary">Do more</span> with Picsart
+  </h1>
+  <p class="text-secondary" style="margin-left: 100px;font-weight: bold;">Monthly <span class="text-primary "
+      style="font-size: 1.5rem;"><i class="fa-solid fa-toggle-off"></i></span> Yearly (Best value)</p>
+
+
+  <div class="container-fluid px-md-5">
+    <div class="row d-flex px-md-5 " style="">
+      <div class="col-md-4 p-5" style="text-align: center; border: 1px solid black;">
+        <h2 style="font-size: 1.5rem;font-weight:600;">Free</h2>
+        <h4 class="mt-4"><span style="font-size: 60px;"> &#8377;0</span>/mo.</h4><br />
+        <button class="mt-3 bg-white" style="width: 100%; border-radius: 25px;padding: 10px 0px;font-weight: bold;">Get
+          started</button>
+        <p class="none">Free for 7 days.Cancel anytime.</p><br />
+        <hr>
+        <h5 style="font-weight: bold;">Craft exceptional content</h5>
+        <p>Selection of free images, videos, and templates <br /> to create original content, without breaking the
+          <br />bank.
+        </p>
+      </div>
+
+      <div class="col-md-4 p-5" style="text-align: center;border: 1px solid black;">
+        <img src="https://pastatic.picsart.com/cms-pastatic/1e085e17-b46f-45e7-8e18-66b37592003b.svg" alt="" class="">
+        <h4 class="mt-4"><span style="font-size: 60px;"> &#8377;590</span>/mo.</h4><br />
+        <button class="mt-3 bg-white"
+          style="width: 100%; border-radius: 25px; padding: 10px 0px;font-weight: bold;">Learn about plus</button>
+        <p style="font-size: 0.8rem;font-weight: bold;">Free for 7 days.Cancel anytime.</p><br />
+        <hr>
+        <h5 style="font-weight: bold;">Elevate your designs</h5>
+        <p>Access to premium content and templates to level up your designs.</p>
+      </div>
+
+      <div class="col-md-4 p-5" style=" text-align: center; border: 1px solid black;">
+        <img src="https://pastatic.picsart.com/cms-pastatic/8c1fac8d-7b33-4027-a279-2dffe2e1a045.svg" alt="">
+        <h4 class="mt-4"><span style="font-size: 60px;"> &#8377;690</span>/mo.</h4><br />
+        <button class="bg-primary mt-3"
+          style="width: 100%; border-radius: 25px;padding: 10px 0px;font-weight: bold;">Learn about
+          pro</button>
+        <p style="font-size: 0.8rem;font-weight: bold;">Free for 7 days.Cancel anytime.</p><br />
+        <hr>
+        <h5 style="font-weight: bold;">Maximize creative efficiency</h5>
+        <p>Full suite of powerful AI tools, with centralized <br />billing and admin controls to scale as your
+          <br />business grows.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h1 style="text-align: center; font-size: 60px;font-weight:600;">Explore the Picsart toolkit</h1>
+    <h5 style="text-align: center;font-weight: bold;">Get creative with our AI photo editing tools</h5>
+  </div>
+
+  <div class="container-fluid py-5">
+    <div class="row px-md-5">
+      <div class="col-md-3 col-6">
+        <div class="box ">
+          <div class="icon">
+            <a href=""><i class="fa-solid fa-image"></i></a>
+          </div>
+        </div>
+        <p class="icon-name">Photo Editor</p>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="box">
+          <div class="icon">
+            <a href="">
+              <h2>AI</h2>
+            </a>
+          </div>
+        </div>
+        <p class="icon-name">AI Logo Generator</p>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="box">
+          <div class="icon">
+            <a href=""><i class="fa-solid fa-photo-film"></i></a>
+          </div>
+        </div>
+        <p class="icon-name">Background changer</p>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="box">
+          <div class="icon">
+            <a href=""><i class="fa-regular fa-sun"></i></a>
+          </div>
+        </div>
+        <p class="icon-name">AI Enhance</p>
+      </div>
+    </div>
+
+    <div class="row px-md-5">
+      <div class="col-md-3 col-6">
+        <div class="box">
+          <div class="icon">
+            <a href=""><i class="fa-solid fa-wand-magic-sparkles"></i></a>
+          </div>
+        </div>
+        <p class="icon-name">Remove object</p>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="box">
+          <div class="icon">
+            <a href="">
+              <h2>AI</h2>
+            </a>
+          </div>
+        </div>
+        <p class="icon-name">AI Image Extender</p>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="box">
+          <div class="icon">
+            <a href=""><i class="fa-solid fa-text-width"></i></a>
+          </div>
+        </div>
+        <p class="icon-name">Text Editor</p>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="box">
+          <div class="icon">
+            <a href=""><i class="fa-solid fa-layer-group"></i></a>
+          </div>
+        </div>
+        <p class="icon-name">Collage Maker</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid  text-white py-3" style="background-color: black;">
+    <div class="row px-3 px-md-5 align-items-center">
+    
+      <div class="col-md-6 mb-4 mb-md-0 p-md-5">
+        <h1>Let's make it</h1>
+        <div class="mt-4 feature-text">
+          <p><i class="fa-solid fa-check mr-2"></i>Cutting-edge AI tools</p>
+          <p><i class="fa-solid fa-check mr-2"></i>No complex software to install</p>
+          <p><i class="fa-solid fa-check mr-2"></i>The ultimate creative suite</p>
+          <a href=""><button class="btn btn-light mt-3">Get started for free</button></a>
+        </div>
+      </div>
+
+      <div class="col-md-6 p-md-5">
+        <img
+          src="https://pastatic.picsart.com/cms-pastatic/4bea4257-09e8-4957-8ae6-f49da7cb7fd1.png?type=webp&to=min&r=1200&q=75"
+          alt="Creative suite" class="img-fluid img-fluid-custom">
+      </div>
+    </div>
+  </div>
+
+  <h3 style="text-align: center;font-weight: 600; font-size: 1.3rem; margin-bottom: 30px;" class="mt-md-5 ">Explore
+    Picsart's most popular features and content</h3>
+
+  <div class=" explore d-flex flex-wrap justify-content-center mt-5  " style="gap: 10px;">
+    <a class="features" href="">
+      <h4>Try AI image generation</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Enhance photos with AI</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Edit photos online</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Remove image backgrounds</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Create AI art</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Browse design templates</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Explore all AI tools</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Download mobile apps</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Try photo effects</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Create photo collages</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Get Picsart pro</h4>
+    </a>
+    <a class="features" href="">
+      <h4>Learn more about Picsart</h4>
+    </a>
+  </div>
+
+  <div class="container-fluid mt-md-5" style="font-size: 14px;">
+    <div class="row">
+      <div class="col-md-6 text-md-start mb-4 mt-md-5">
+        <h4><a href=""><img src="https://pastatic.picsart.com/cms-pastatic/8218299e-3dc4-4d50-8a54-0b78d3f5a683.svg"
+              alt=""></a></h4>
+        <p class="mt-5" style="font-weight: 900;">Get the Free App</p>
+        <div><img
+            src="C:\Users\LENOVO\OneDrive\Desktop\frontend\project-Picsart\app,play,microsoft-fotor-bg-remover-2025071001031.png"
+          class="mb-3"  style="width: 30%; height: 50px;" alt=""></div>
+        <div class="d-flex justify-content-center justify-content-md-start ">
+          <div class="icons"><i class="fa-brands fa-facebook mr-1"></i>
+            <i class="fa-brands fa-x-twitter mr-2"></i>
+            <i class="fa-brands fa-instagram mr-2"></i>
+            <i class="fa-brands fa-linkedin mr-2"></i>
+            <i class="fa-brands fa-youtube mr-2"></i>
+            <i class="fa-brands fa-pinterest mr-2"></i>
+          </div>
+        </div>
+        <img src="https://i.pinimg.com/736x/eb/f7/c5/ebf7c5b995301add46722493671c8c67.jpg" alt="" style="width: 60px;" class="mt-3">
+      </div>
+      <div class="col-md-2 mt-md-5">
+        <h6 style="font-size: 1.2rem; font-weight: bold;">Explore</h6>
+        <div class="foot-links mt-3">
+          <a href="">
+            <p>Image Tools</p>
+          </a>
+          <a href="">
+            <p>Video Tools</p>
+          </a>
+          <a href="">
+            <p> Design Tools</p>
+          </a>
+          <a href="">
+            <p>AI Tools</p>
+          </a>
+          <a href="">
+            <p>Templates</p>
+          </a>
+          <a href="">
+            <p>Colours</p>
+          </a>
+          <a href="">
+            <p>Fonts</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 mt-md-5">
+        <h6 style="font-size: 1.2rem;font-weight: bold;">Solutions</h6>
+        <div class="foot-links mt-3">
+          <a href="">
+            <p>For Buisiness</p>
+          </a>
+          <a href="">
+            <p>For Developers</p>
+          </a>
+          <a href="">
+            <p>For Google Drives</p>
+          </a>
+          <a href="">
+            <p>For Specific Industries</p>
+          </a>
+          <a href="">
+            <p>Quick Tools</p>
+          </a>
+          <a href="">
+            <p>AI Avatar</p>
+          </a>
+          <a href="">
+            <p>Pricing</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 mt-md-5">
+        <h6 style="font-size: 1.2rem;font-weight: bold;">Company</h6>
+        <div class="foot-links mt-3">
+          <a href="">
+            <p>Support</p>
+          </a>
+          <a href="">
+            <p>Careers</p>
+          </a>
+          <a href="">
+            <p>About us</p>
+          </a>
+          <a href="">
+            <p>Affitiate Program</p>
+          </a>
+          <a href="">
+            <p>Blog</p>
+          </a>
+          <a href="">
+            <p>Press Center</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+
+
+
+
+
+    <div class=" d-flex flex-wrap justify-content-center text-center ">
+      <a href="" class="terms">Terms of Use </a>
+      <a href="" class="terms">privacy Policy</a>
+      <a href="" class="terms">Do Not Sell</a>
+      <a href="" class="terms">Interest-based Advertising</a>
+      <a href="" class="terms">Community Guidelines</a>
+      <a href="" class="terms">DMCA</a>
+      <a href="" class="terms">Security policy</a>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown text-center  mt-5 mb-4">
+        <a class="button  dropdown-toggle bg-white text-dark" href="#" role="button" data-toggle="dropdown"
+          aria-expanded="false"><i class="fa-solid fa-globe"></i> English</a>
+
+
+        <div class="dropdown-menu mb-5">
+          <a class="dropdown-item" href="#">Bengali</a>
+          <a class="dropdown-item" href="#">Chinese</a>
+          <a class="dropdown-item" href="#">Dutch</a>
+          <a class="dropdown-item" href="#">English</a>
+          <a class="dropdown-item" href="#">French</a>
+          <a class="dropdown-item" href="#">German</a>
+          <a class="dropdown-item" href="#">Greek</a>
+          <a class="dropdown-item" href="#">Hindi</a>
+
+        </div>
+      </div>
+    </div>
+
+    <h6 class="last text-center text-secondary" style="font-weight: bold;">© 2025 PicsArt, Inc.</h6>
+
+
+
+    <footer id="scrollFooter" class="footer bg-white text-center fixed-bottom p-2">
+    <span style="font-weight:900;">Start creating</span>
+    <a href=""><button class="btn btn-primary ml-2">Get started for free</button></a>
+  </footer>
+
+
+  <script>
+    const container = document.getElementById("cardContainer");
+    const leftArrow = document.getElementById("leftArrow");
+    const rightArrow = document.getElementById("rightArrow");
+
+    function updateArrowVisibility() {
+      const scrollLeft = container.scrollLeft;
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+      leftArrow.style.display = scrollLeft > 10 ? "block" : "none";
+      rightArrow.style.display = scrollLeft < maxScrollLeft - 10 ? "block" : "none";
+    }
+
+
+    leftArrow.addEventListener("click", () => {
+      container.scrollBy({ left: -200, behavior: "smooth" });
+    });
+
+    rightArrow.addEventListener("click", () => {
+      container.scrollBy({ left: 200, behavior: "smooth" });
+    });
+
+
+    container.addEventListener("scroll", updateArrowVisibility);
+
+    window.addEventListener("load", updateArrowVisibility);
+    window.addEventListener("resize", updateArrowVisibility);
+  </script>
+
+  <script>
+  const links = document.querySelectorAll(".domain-links");
+  const image = document.getElementById("preview-image");
+  const defaultImage = "https://pastatic.picsart.com/cms-pastatic/1b63d445-9fa4-4dd0-9467-b73f070218e9.png?type=webp&to=max&r=910&q=100";
+
+  links.forEach(link => {
+    link.addEventListener("mouseover", () => {
+      const newSrc = link.getAttribute("data-img");
+      image.style.opacity = 0;
+
+      setTimeout(() => {
+        image.setAttribute("src", newSrc);
+        image.style.opacity = 1; 
+      }, 300); 
+    });
+
+    link.addEventListener("mouseout", () => {
+      image.style.opacity = 0;
+
+      setTimeout(() => {
+        image.setAttribute("src", defaultImage);
+        image.style.opacity = 1;
+      }, 300);
+    });
+  });
+</script>
+
+
+<script>
+    window.addEventListener('scroll', function () {
+      const footer = document.getElementById('scrollFooter');
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolledPercentage = (scrollTop / windowHeight) * 100;
+
+      if (scrolledPercentage >= 30) {
+        footer.classList.add('show');
+      } else {
+        footer.classList.remove('show');
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
